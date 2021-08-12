@@ -1,0 +1,54 @@
+.HEADER {
+    text-align: center;
+    padding: 50px;
+    font-size: 60px;
+    color: #33312d;
+    font-weight:500 ;
+}
+mat-grid-tile {
+    background: rgb(252, 251, 251);
+    padding-top: 80px;
+}
+.head {
+    text-align: center;
+    padding: 40px;
+    font-size: 40px;
+    color: #DF9C41;
+    margin-left: 170px;
+    font-weight:500;
+    display: flex;
+    justify-content: space-between;
+    margin-top: -110px;
+    margin-right: 170px;
+}
+.shape {
+    margin: left 5px;
+    margin-right: 200px;
+    font-size: 16px;
+    font-family:sans-serif;
+    font-style: Light;
+}
+.phone {
+  padding: 50px;
+}
+.visit {
+    padding: 50px;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.child-1{
+    flex-direction: column;
+    display: flex;
+    height: 200px;
+    flex-flow: column wrap;
+    margin-left: 100px;
+    margin-right: 200px;
+}
+    
+.container{
+     margin: 15px;
+     height:200px;
+     width:500px;
+     border:2px solid red;
+     
+}

@@ -1,0 +1,24 @@
+<div>
+<mat-toolbar class="layout">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <mat-toolbar-row> 
+ 
+      <div class="logo1"  fxLayout="row war;" fxLayoutGap="-1.9px" style="height: 70px;">
+          <img mat-card-image src="assets\LOGO.png" alt="white">
+      </div>
+      <span class="example-spacer"></span>
+
+      <div class="button-row" fxLayout="row war;" fxLayoutGap="-1.9px" style="height: 70px;">
+          <a><button mat-button color="white">HOME</button></a>
+          <a><button mat-button color="white">ABOUT US</button></a>
+          <a><button mat-button color="white" routerLink="product">PRODUCT</button></a>
+          <a><button mat-button color="white" routerLink="careers">CAREERS</button></a>
+          <a><button mat-button color="white">CONTACT US</button></a>
+      </div>
+   
+    </mat-toolbar-row>
+</mat-toolbar>
+</div>
+
+<router-outlet></router-outlet>
