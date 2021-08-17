@@ -7,74 +7,62 @@
 }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-.button-row {
-    margin-left: 590px;
-    padding-top: 5%;
-    margin-top: 0px;
-    margin-right: 50px;
+.nav {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-top: 7%;
+    margin-left: 41%;
+    padding-bottom: 2%;
+
+}
+.lay {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    align-content: space-around;
-    justify-content: flex-end;
-   
-}
-.example-spacer {
-    flex: 1 1 auto;
-    padding: 20px;
-
-}
-.logo1 {
-    margin-top: -100px;
-    margin-left: 35px;
-    display: flex;
-
 }
 .layout {
-    color: whitesmoke;
+    color: rgb(255, 255, 255);
     background-color: #241F25;
-    padding: 50px;
-    display: flex;
-    display: grid;
+    width: 100%;
     
 }
-#check{
+.menu {
     display: none;
+    
 }
-@media (max-width: 952px){
-    .logo1{
-        font-size: 30px;
-        padding-left: 50px;
-    }
-    .button-row{
-        font-size: 16px;
-    }
+.logo1{
+  display: flex;
+  margin-left: 15%;
 }
-@media (max-width: 858px){
-    .checkbtn{
+.icon {
+    background: none;
+    border: none;
+    color: white;
+}
+.menu.active {
+    display:block;
+}
+
+@media all and (min-width: 1024px){
+    .menu{
+       visibility: hidden;
+       display: none;
+    }
+    
+}
+@media (max-width: 1023px){
+    .menu{
+        visibility: visible;
         display: block;
     }
-    .button-row{
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        top: 80px;
-        left: -100;
-        text-align: center;
-        transition: all .5s;
+    nav{
+       visibility: hidden;
+       display: none;
     }
-    .button-row a {
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
+    .logo1 {
+        width: 180%;
     }
-    .button-row a button {
-        font-size: 20px;
-    }
-    button:hover,button.active{
-        background: none;
-    }
-    #check:checked ~ .button-row{
-        left: 0;
+    .layout {
+        padding: 20px;
     }
 }

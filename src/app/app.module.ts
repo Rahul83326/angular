@@ -10,10 +10,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ProductComponent } from './product/product.component';
 import { CareersComponent } from './careers/careers.component';
 import {MatGridListModule} from '@angular/material/grid-list';
+import {MatMenuModule} from '@angular/material/menu';
 import {MatIconModule} from '@angular/material/icon';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import {MatListModule} from '@angular/material/list';
+import {MatSidenavModule} from '@angular/material/sidenav';
+
+
 
 
 @NgModule({
@@ -23,7 +27,7 @@ import {MatListModule} from '@angular/material/list';
     CareersComponent
   ],
   imports: [
-    BrowserModule,MatButtonModule,MatToolbarModule,MatCardModule,MatProgressSpinnerModule,
+    BrowserModule,MatButtonModule,MatToolbarModule,MatMenuModule, MatSidenavModule,MatCardModule,MatProgressSpinnerModule,
     AppRoutingModule,MatGridListModule,MatIconModule,FlexLayoutModule,MatListModule,
     BrowserAnimationsModule
   ],

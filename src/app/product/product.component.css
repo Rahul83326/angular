@@ -37,12 +37,11 @@ mat-grid-tile {
     margin-left: 50px;
 }
 .child-1{
-    flex-direction: column;
-    display: flex;
+    display: grid;
     height: 200px;
     flex-flow: column wrap;
-    margin-left: 100px;
-    margin-right: 200px;
+    margin-left: 35%;
+    margin-right: 35%;
 }
     
 .container{
@@ -52,3 +51,12 @@ mat-grid-tile {
      border:2px solid red;
      
 }
+
+@media all and (min-width: 1024px){
+    .child{
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    
+}
+ 

@@ -1,24 +1,29 @@
-<div>
-<mat-toolbar class="layout">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <mat-toolbar-row> 
+<div class="layout">
+    <div class="lay"> 
  
-      <div class="logo1"  fxLayout="row war;" fxLayoutGap="-1.9px" style="height: 70px;">
-          <img mat-card-image src="assets\LOGO.png" alt="white">
+      <div>
+          <img mat-card-image src="assets\LOGO.png" class="logo1" >
       </div>
-      <span class="example-spacer"></span>
+      
+      <nav class="nav">
+        <button mat-raised-button>HOME</button>
+        <button mat-button>ABOUT US</button>
+        <button mat-button routerLink='product'>PRODUCT</button>
+        <button mat-button routerLink='careers'>CAREERS</button>
+        <button mat-button>CONTACT US</button>
+      </nav>
 
-      <div class="button-row" fxLayout="row war;" fxLayoutGap="-1.9px" style="height: 70px;">
-          <a><button mat-button color="white">HOME</button></a>
-          <a><button mat-button color="white">ABOUT US</button></a>
-          <a><button mat-button color="white" routerLink="product">PRODUCT</button></a>
-          <a><button mat-button color="white" routerLink="careers">CAREERS</button></a>
-          <a><button mat-button color="white">CONTACT US</button></a>
-      </div>
-   
-    </mat-toolbar-row>
-</mat-toolbar>
+      <button mat-icon-button [matMenuTriggerFor]="menu" class="menu" aria-label="Example icon-button with a menu">
+         <mat-icon>menu</mat-icon>
+       </button>
+       <mat-menu #menu="matMenu">
+         <button mat-button>HOME</button>
+         <button mat-button>ABOUT US</button>
+         <button mat-button routerLink='product'>PRODUCT</button>
+         <button mat-button routerLink='careers'>CAREERS</button>
+         <button mat-button>CONTACT US</button>
+       </mat-menu>
+    </div>
 </div>
-
 <router-outlet></router-outlet>
